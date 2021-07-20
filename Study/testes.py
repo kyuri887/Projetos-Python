@@ -1,2 +1,1 @@
-nome = 'Kauan'
-print(f'hello world, {nome}')
+print('helloworld')
