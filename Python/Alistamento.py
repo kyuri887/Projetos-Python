@@ -17,18 +17,18 @@ def alistamento_militar():
         time.sleep(2)
         if idade > 18:
             soma = idade - 18
-            print(f'Você deveria ter se alistado a {soma} anos atrás!')
+            print(f'Você deveria ter se alistado há \033[35m{soma}\033[m anos atrás!')
             alistamento = ano_atual - soma
-            print(f'Seu alistamento foi em {alistamento}!')
+            print(f'Seu alistamento foi em \033[34m{alistamento}\033[m!')
         elif idade < 18:
             soma = 18 - idade
-            print(f'Você deve se alistar daqui há {soma} anos!')
+            print(f'Você deve se alistar daqui há \033[35m{soma}\033[m anos!')
             alistamento = ano_atual + soma
-            print(f'Seu alistamento será em {alistamento}!')
+            print(f'Seu alistamento será em \033[34m{alistamento}\033[m!')
         else:
-            print('Você deve se alistar IMEDIATAMENTE!')
+            print('Você deve se alistar \033[31mIMEDIATAMENTE!\033[m')
     elif sexo == 2:
-            print('Você não precisa se alistar para o serviço militar!')
+            print('\033[33mVocê não precisa se alistar para o serviço militar!\033[m')
 
 while True:
     
@@ -40,9 +40,9 @@ while True:
     elif consultar in ['sim','Sim','SIM']:
         pass
     else:
-        print('Valor não compreendido, TENTE NOVAMENTE!')
+        print('Valor não compreendido, \033[31mTENTE NOVAMENTE!\033[m')
         pass
-    
+
 
 
 
