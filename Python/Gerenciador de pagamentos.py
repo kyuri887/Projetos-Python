@@ -29,6 +29,8 @@ def gerenciador_de_pagamento():
             print('Parcela não compreendida, TENTE NOVAMENTE...')
     else:
         print('Valor não compreendido, TENTE NOVAMENTE...') 
+        gerenciador_de_pagamento()
+    return opção
 while True:
     consulta = gerenciador_de_pagamento()
     consulta = str(input('Quer consultar novamente? '))
