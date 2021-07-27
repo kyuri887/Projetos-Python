@@ -43,5 +43,3 @@ elif computador == 2: #tesoura
         print('Empate!')
     else:
         print('JOGADA INVALIDA!')
-else:
-    print('JOGADA INVALIDA!')
