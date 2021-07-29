@@ -5,8 +5,8 @@ print('-=-' * 16)
 print('CONTAGEM REGRESSIVA PARA OS FOGOS DE ARTIFICIO!')
 print('-=-' * 16)
 sleep(5)
-n = 0
-for c in range(10, n-1, -1):
+
+for c in range(10, -1, -1):
     print(c)
-    sleep(2)
-print('FELIZ ANO NOVO!!!')
+    sleep(1.5)
+print('FELIZ ANO NOVOOO!')
