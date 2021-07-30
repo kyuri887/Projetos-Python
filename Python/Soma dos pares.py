@@ -5,4 +5,5 @@ for c in range(0, 6):
     if par % 2 == 0:
         soma += par
         cont += 1
-print(f'Você informou {cont} números pares e a soma desses números é igual a {soma}')
+print(f'Você informou {cont} números pares e a soma deles é igual a {soma}')
+    
