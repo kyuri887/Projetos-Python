@@ -5,3 +5,4 @@ for c in range(1, 501, 2):
         soma += c
         cont += 1
 print(f'A soma de todos os {cont} valores solicitados é {soma}')
+
