@@ -1,6 +1,6 @@
-import colorama
+import colorama as color
 from time import sleep as sp
-colorama.init()
+color.init()
 
 def primo():
     n1 = int(input('Digite um número: '))
