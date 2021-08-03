@@ -1,11 +1,12 @@
-import time
+from time import sleep
 import colorama as color
 color.init()
-def maior_menor():
+
+def kg():
     maior = 0
     menor = 0
     for c in range(1, 6):
-        peso = float(input(f'Qual peso da {c}ª pessoa: Kg '))
+        peso = float(input(f'Quantos Kg tem a {c}ª pessoa: Kg'))
         if c == 1:
             maior = peso
             menor = peso
@@ -14,27 +15,21 @@ def maior_menor():
                 maior = peso
             if peso < menor:
                 menor = peso
-    print('PROCESSING...')
-    time.sleep(3)
-    print(f'O maior peso é \033[33m{maior}Kg\033[m')
-    time.sleep(3)
-    print(f'E o menor peso é \033[31m{menor}Kg\033[m')
-    time.sleep(3)
+    print('Processing...')
+    sleep(3)
+    print(f'O maior peso da lista é {maior}Kg')
+    print(f'E o menor peso da lista é {menor}Kg')
+    sleep(3.5)
+
 while True:
-    retorno = maior_menor()
-    print('Quer consultar novamente?')
-    time.sleep(2)
-    print('''Escolha entre a opção 1 e 2:
-    \033[32m[ 1 ]Sim\033[m
-    \033[31m[ 2 ]Não\033[m''')
-    retorno = int(input('Escolha uma das opções acima: '))
-    if retorno == 1:
+    
+    retorno = kg()
+
+    retorno = str(input('Quer consultar novamente? '))
+    if retorno in ['Sim', 'SIM', 'sim']:
         pass
-    elif retorno == 2:
+    elif retorno in ['Não', 'NÃO', 'não', 'Nao', 'NAO','nao']:
         break
     else:
         break
 
-    
-        
-    
