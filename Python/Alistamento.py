@@ -34,14 +34,16 @@ while True:
     
     consultar = alistamento_militar()
     
-    consultar = str(input('Você quer consultar novamente? '))
-    if consultar in ['nao', 'não', 'Não','Nao', 'NÃO','NAO']:
+    consultar = str(input('Você quer consultar novamente?(S/N) ')).upper().strip()[0]
+    while consultar not in ['S', 's', 'N', 'n']:
+        print('Valor não compreendido, TENTE NOVAMENTE!')
+        consultar = str(input('Quer consultar novamente?(S/N) '))
+    if consultar in ['S', 's', 'Sim', 'SIM','sim']:
+        pass
+    elif consultar in ['nao', 'Não', 'NÃO','não','Nao', 'NAO', 'n', 'N']:
         break
-    elif consultar in ['sim','Sim','SIM']:
-        pass
     else:
-        print('Valor não compreendido, \033[31mTENTE NOVAMENTE!\033[m')
-        pass
+        break
 
 
 
