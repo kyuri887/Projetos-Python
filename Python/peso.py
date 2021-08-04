@@ -17,15 +17,15 @@ def kg():
                 menor = peso
     print('Processing...')
     sleep(3)
-    print(f'O maior peso da lista é {maior}Kg')
-    print(f'E o menor peso da lista é {menor}Kg')
+    print(f'O maior peso da lista é \033[32m{maior}\033[mKg')
+    print(f'E o menor peso da lista é \033[31m{menor}Kg')
     sleep(3.5)
 
 while True:
     
     retorno = kg()
 
-    retorno = str(input('Quer consultar novamente? '))
+    retorno = str(input('\033[32mQuer consultar novamente?\033[m '))
     if retorno in ['Sim', 'SIM', 'sim']:
         pass
     elif retorno in ['Não', 'NÃO', 'não', 'Nao', 'NAO','nao']:
