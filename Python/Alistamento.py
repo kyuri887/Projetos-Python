@@ -9,6 +9,7 @@ def alistamento_militar():
     Opção: '''))
     print('Processing...')
     time.sleep(2)
+    
     if sexo == 1:
         ano = int(input('Ano de nascimento: '))
         ano_atual = date.today().year
@@ -35,9 +36,11 @@ while True:
     consultar = alistamento_militar()
     
     consultar = str(input('Você quer consultar novamente?(S/N) ')).upper().strip()[0]
+    
     while consultar not in ['S', 's', 'N', 'n']:
         print('Valor não compreendido, TENTE NOVAMENTE!')
         consultar = str(input('Quer consultar novamente?(S/N) '))
+    
     if consultar in ['S', 's', 'Sim', 'SIM','sim']:
         pass
     elif consultar in ['nao', 'Não', 'NÃO','não','Nao', 'NAO', 'n', 'N']:
