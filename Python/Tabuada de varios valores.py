@@ -1,20 +1,19 @@
 from time import sleep
 
-cont = 0
+c = 0
 while True:
-    print('-=-'*15)
     n = int(input('Digite um número para saber sua tabuada: '))
-    print('-=-'*15)
     print('Processando...')
-    sleep(2)
-    if n < 0:
+    sleep(2.5)
+    if n < 0: 
         break
-    while n not in ['-']:
-        cont += 1
-        if cont > 10:
-            cont = 1
-        print(f'{n} x {cont:^2} = {n*cont}')
+    print('-=-'*15)
+    while c <= 10:
+        c+=1
+        print(f'{n} X {c:^2} = {n*c}')
         sleep(1)
-        if cont == 10:
+        if c == 10:
             break
-print('Fim do programa de tabuada!')
+    print('-=-'*15)
+    c = 0
+print('Fim do programa de tabuada, Volte Sempre!')
