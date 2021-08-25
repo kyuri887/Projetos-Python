@@ -35,6 +35,3 @@ while True:
     else:
         break
 
-n = str(input('Digite uma letra: '))
-if n[0] in 'aeiou':
-    print(n)
