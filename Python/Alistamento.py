@@ -1,6 +1,7 @@
 import colorama
 import time
 from datetime import date
+
 colorama.init()
 def alistamento_militar():
     sexo = int(input('''Qual o seu sexo?
