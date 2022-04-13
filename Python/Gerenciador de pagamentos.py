@@ -1,5 +1,4 @@
 import time
-import colorama
 def gerenciador_de_pagamento():
     preço = float(str(input('Preço das compras: R$')))
     print('''Escolha de pagamento:
